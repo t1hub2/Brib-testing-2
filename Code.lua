@@ -151,7 +151,7 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
    Name = "Helor hub (От SCRIPTINGER)",
    Callback = function()
-    https://raw.githubusercontent.com/SCRIPTINGER/REMASTERED/refs/heads/main/KEY%20SYSTEM.LUA-- The function that takes place when the button is pressed
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SCRIPTINGER/REMASTERED/refs/heads/main/KEY%20SYSTEM.LUA"))()
    end,
 })
 local Tab = Window:CreateTab("Читы 2",17084915860)
