@@ -244,7 +244,7 @@ achievementGiver({
 })
    end,
 })
-
+local Tab = Window:CreateTab("От MrNeRD0 🫡",0)
 local Tab = Window:CreateTab("Создатели и тд.",4483362458)
 local Paragraph = Tab:CreateParagraph({Title = "Создатели", Content = "T1 и SCRIPTINGER"})
 local Paragraph = Tab:CreateParagraph({Title = "Телеграм", Content = "https://t.me/T1hubb"})
