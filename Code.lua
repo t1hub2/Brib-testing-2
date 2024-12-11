@@ -128,6 +128,14 @@ local Button = Tab:CreateButton({
     loadstring(game:HttpGet("https://pastebin.com/raw/iBBqfYzn"))()-- The function that takes place when the button is pressed
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "1000 фпс сканер",
+   Callback = function()
+    _G.scanner_fps = 1000
+              _G.disable_static = false
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/Scanner.lua"))()
+   end,
+})
 local Tab = Window:CreateTab("Монстры",13143005702)
 local Button = Tab:CreateButton({
    Name = "Заспавни Пандениона",
