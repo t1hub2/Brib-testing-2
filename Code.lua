@@ -122,6 +122,12 @@ local Button = Tab:CreateButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CatEnddroid/Seek-Plushie/refs/heads/main/SeekPlushie.lua"))()-- The function that takes place when the button is pressed
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "Путеводный сканер",
+   Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/iBBqfYzn"))()-- The function that takes place when the button is pressed
+   end,
+})
 local Tab = Window:CreateTab("Монстры",13143005702)
 local Button = Tab:CreateButton({
    Name = "Заспавни Пандениона",
