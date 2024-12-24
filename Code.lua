@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
-   Name = "T1 hub / Doors",
-   Icon = codesandbox, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   Name = "T1 hub / Doors [GAME]",
+   Icon = "codesandbox" , -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Загрузка",
    LoadingSubtitle = "T1",
    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
@@ -29,7 +29,7 @@ local Window = Rayfield:CreateWindow({
       FileName = "ключ", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
       GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"https://work.ink/1Xrx/m4wvdfac?__cf_chl_tk=XUA6Rx9sNZ0a2eq_CBX0HbYejkj4aZB_ypV9hGfBm5M-1734777908-1.0.1.1-zRKFSWIeqo9GIF9EudPzYYnA_q4Rh7yX2L6NreDUoZE"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+      Key = {"https://pastebin.com/raw/3H7DghFz"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
 Rayfield:Notify({
