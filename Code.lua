@@ -156,7 +156,7 @@ local Button = Tab:CreateButton({
    Title = "Подсказка!",
    Content = "Q для спавна",
    Duration = 6.5,
-   Image = "rewind",
+   Image = "lightbulb",
 })
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/adadasdada/refs/heads/main/Grumble"))()-- The function that takes place when the button is pressed
    end,
