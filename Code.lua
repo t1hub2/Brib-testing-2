@@ -242,6 +242,12 @@ local Button = Tab:CreateButton({
     loadstring(game:HttpGet("https://pastebin.com/raw/HT8jgqAY"))()-- The function that takes place when the button is pressed
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "Виридис рифт",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/VIRIDIS%20RIFT%20ORIGINAL"))()-- The function that takes place when the button is pressed
+   end,
+})
 local Tab = Window:CreateTab("Бейджики",4483362458)
 local Button = Tab:CreateButton({
    Name = "A-5000",
