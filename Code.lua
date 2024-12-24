@@ -152,7 +152,12 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
    Name = "грамбл",
    Callback = function()
-    
+    Rayfield:Notify({
+   Title = "Подсказка!",
+   Content = "Q для спавна",
+   Duration = 6.5,
+   Image = "rewind",
+})
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/adadasdada/refs/heads/main/Grumble"))()-- The function that takes place when the button is pressed
    end,
 })
