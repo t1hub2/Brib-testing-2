@@ -162,7 +162,7 @@ local Button = Tab:CreateButton({
    end,
 })
 local Button = Tab:CreateButton({
-   Name = "грамбл",
+   Name = "Дозер",
    Callback = function()
     Rayfield:Notify({
    Title = "Подсказка!",
