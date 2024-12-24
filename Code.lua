@@ -149,6 +149,13 @@ local Button = Tab:CreateButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Idk-lol2/a-60aa/refs/heads/main/---%3D%3D%3D%3D%3D%3D%20a-60%20agresiv%20spawner%20%3D%3D%3D%3D%3D%3D---.txt"))()-- The function that takes place when the button is pressed
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "грамбл",
+   Callback = function()
+    
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/adadasdada/refs/heads/main/Grumble"))()-- The function that takes place when the button is pressed
+   end,
+})
 local Tab = Window:CreateTab("Читы",17084915860)
 local Button = Tab:CreateButton({
    Name = "Мс паинт v3 (не обновляется)",
