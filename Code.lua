@@ -161,6 +161,31 @@ local Button = Tab:CreateButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/adadasdada/refs/heads/main/Grumble"))()-- The function that takes place when the button is pressed
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "грамбл",
+   Callback = function()
+    Rayfield:Notify({
+   Title = "Подсказка!",
+   Content = "Он спввнится автоматически!",
+   Duration = 6.5,
+   Image = "lightbulb",
+})
+    _G.dozerSpawnerSettings = {
+    dozerSpawnCD = 1,
+    ticksBeforeChecking = 10,
+    tomorrowTexts = 10,
+    SpawnerSettings = {
+        SpawnByUser = false, --set to true if you want to spawn Dozer
+        SpawnKeybind = Enum.KeyCode.Z,
+        SpawnRandomSettings = {
+            MathRandomSpawn1 = 10,
+            MathRandomSpawn2 = 15
+        }
+    }
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IdkMyNameLoll/34921473024732147312483297412/refs/heads/main/dozerspawner"))()
+   end,
+})
 local Tab = Window:CreateTab("Читы",17084915860)
 local Button = Tab:CreateButton({
    Name = "Мс паинт v3 (не обновляется)",
