@@ -231,6 +231,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/IdkMyNameLoll/3492147
    end,
 })
 local Tab = Window:CreateTab("Читы",17084915860)
+local Button = Tab:CreateButton({
    Name = "Мс паинт v3 (не обновляется)",
    Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
