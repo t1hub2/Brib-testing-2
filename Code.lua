@@ -136,6 +136,44 @@ local Button = Tab:CreateButton({
               loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/Scanner.lua"))()
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "СВЯТОЙ КРЕСТ",
+   Callback = function()
+    ---====== Load module ======---
+      local module = loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew201322/Doors-Scriptee/refs/heads/main/Crucifix%20Source.lua"))()
+
+      ---====== Create crucifix ======---
+      module.GiveCrucifix({
+         Type = 1, -- Crucifix type (1 = Guiding Light)
+         Uses = nil, -- nil for infinite uses
+         Resist = false, -- If true, can resist certain entities
+         EntitiesOnly = true, -- If true, works only on custom entities
+         IgnoreList = {} -- List of entities to ignore
+      })
+
+      --[[
+
+      CRUCIFIX TYPES:
+      -> 1: Guiding Light
+
+      COMING SOON:
+      -> Curious Light crucifix type
+
+      ]]--
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Путеводный сканер",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Teilsthebfdifan/ta-blets/refs/heads/main/guiding%20tablet.lua.txt"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Земленой сканер",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew201322/Doors-Scriptee/refs/heads/main/grass%20tablet.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
 local Tab = Window:CreateTab("Монстры",13143005702)
 local Button = Tab:CreateButton({
    Name = "Заспавни Пандениона",
@@ -192,34 +230,7 @@ sound:Play()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/IdkMyNameLoll/34921473024732147312483297412/refs/heads/main/dozerspawner"))()
    end,
 })
-local Button = Tab:CreateButton({
-   Name = "СВЯТОЙ КРЕСТ",
-   Callback = function()
-    ---====== Load module ======---
-      local module = loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew201322/Doors-Scriptee/refs/heads/main/Crucifix%20Source.lua"))()
-
-      ---====== Create crucifix ======---
-      module.GiveCrucifix({
-         Type = 1, -- Crucifix type (1 = Guiding Light)
-         Uses = nil, -- nil for infinite uses
-         Resist = false, -- If true, can resist certain entities
-         EntitiesOnly = true, -- If true, works only on custom entities
-         IgnoreList = {} -- List of entities to ignore
-      })
-
-      --[[
-
-      CRUCIFIX TYPES:
-      -> 1: Guiding Light
-
-      COMING SOON:
-      -> Curious Light crucifix type
-
-      ]]--
-   end,
-})
 local Tab = Window:CreateTab("Читы",17084915860)
-local Button = Tab:CreateButton({
    Name = "Мс паинт v3 (не обновляется)",
    Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
