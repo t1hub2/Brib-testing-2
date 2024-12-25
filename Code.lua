@@ -266,6 +266,12 @@ local Button = Tab:CreateButton({
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Idk-lol2/2017mode/refs/heads/main/2017MODEtxt.txt"))()-- The function that takes place when the button is pressed
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "Электричный отель",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Teilsthebfdifan/Guiding-modhub/refs/heads/main/ElectricalHotelV3.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
 local Tab = Window:CreateTab("Крутые фичи",4483362458)
 local Button = Tab:CreateButton({
    Name = "Синий портал (не работает на телефонах",
