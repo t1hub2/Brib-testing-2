@@ -1,5 +1,5 @@
 local sound = Instance.new("Sound", game.Workspace)
-sound.SoundId = "rbxassetid://your_sound_id"
+sound.SoundId = "rbxassetid://8503531171"
 sound:Play()
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
