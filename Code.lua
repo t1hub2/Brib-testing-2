@@ -156,6 +156,9 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
    Name = "грамбл",
    Callback = function()
+    local sound = Instance.new("Sound", game.Workspace)
+sound.SoundId = "rbxassetid://8486683243"
+sound:Play()
     Rayfield:Notify({
    Title = "Подсказка!",
    Content = "Q для спавна",
@@ -168,6 +171,9 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
    Name = "Дозер",
    Callback = function()
+    local sound = Instance.new("Sound", game.Workspace)
+sound.SoundId = "rbxassetid://8486683243"
+sound:Play()
     Rayfield:Notify({
    Title = "Подсказка!",
    Content = "Он спввнится автоматически!",
