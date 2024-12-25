@@ -192,6 +192,32 @@ sound:Play()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/IdkMyNameLoll/34921473024732147312483297412/refs/heads/main/dozerspawner"))()
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "СВЯТОЙ КРЕСТ",
+   Callback = function()
+    ---====== Load module ======---
+      local module = loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew201322/Doors-Scriptee/refs/heads/main/Crucifix%20Source.lua"))()
+
+      ---====== Create crucifix ======---
+      module.GiveCrucifix({
+         Type = 1, -- Crucifix type (1 = Guiding Light)
+         Uses = nil, -- nil for infinite uses
+         Resist = false, -- If true, can resist certain entities
+         EntitiesOnly = true, -- If true, works only on custom entities
+         IgnoreList = {} -- List of entities to ignore
+      })
+
+      --[[
+
+      CRUCIFIX TYPES:
+      -> 1: Guiding Light
+
+      COMING SOON:
+      -> Curious Light crucifix type
+
+      ]]--
+   end,
+})
 local Tab = Window:CreateTab("Читы",17084915860)
 local Button = Tab:CreateButton({
    Name = "Мс паинт v3 (не обновляется)",
