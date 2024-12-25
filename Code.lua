@@ -442,6 +442,36 @@ local Tab = Window:CreateTab("Создатели и тд.",4483362458)
 local Paragraph = Tab:CreateParagraph({Title = "Создатели", Content = "T1 и SCRIPTINGER"})
 local Paragraph = Tab:CreateParagraph({Title = "Телеграм", Content = "https://t.me/T1hubb"})
 local Paragraph = Tab:CreateParagraph({Title = "Наш сайт (часто не работает)", Content = "https://49eff2e2-7363-4a4d-b446-da965aba3be7-00-2ffaxarc4up04.sisko.replit.dev/home/"})
+local Button = Tab:CreateButton({
+   Name = "Копировать ссылку на тг канал",
+   Callback = function()
+    -- Define a text whitelist
+local textWhitelist = {
+    "https://t.me/T1hubb"
+}
+
+-- Example usage: Iterate through and print whitelisted text
+for _, text in ipairs(textWhitelist) do
+    print("Whitelisted text: " .. text)
+end
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Копирывать ссылку на Сайт",
+   Callback = function()
+    -- Define a text whitelist
+local textWhitelist = {
+    "https://49eff2e2-7363-4a4d-b446-da965aba3be7-00-2ffaxarc4up04.sisko.replit.dev/home/"
+}
+
+-- Example usage: Iterate through and print whitelisted text
+for _, text in ipairs(textWhitelist) do
+    print("Whitelisted text: " .. text)
+end
+
+      end,
+})
 
 local sound = Instance.new("Sound", game.Workspace)
 sound.SoundId = "rbxassetid://8503531171"
