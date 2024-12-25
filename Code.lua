@@ -1,7 +1,3 @@
-local sound = Instance.new("Sound", game.Workspace)
-sound.SoundId = "rbxassetid://8503531171"
-sound:Play()
-
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "T1 hub / Doors [GAME]",
@@ -369,6 +365,10 @@ local Button = Tab:CreateButton({
 local Tab = Window:CreateTab("Создатели и тд.",4483362458)
 local Paragraph = Tab:CreateParagraph({Title = "Создатели", Content = "T1 и SCRIPTINGER"})
 local Paragraph = Tab:CreateParagraph({Title = "Телеграм", Content = "https://t.me/T1hubb"})
+
+local sound = Instance.new("Sound", game.Workspace)
+sound.SoundId = "rbxassetid://8503531171"
+sound:Play()
 
 ---====== Load achievement giver ======---
 local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
