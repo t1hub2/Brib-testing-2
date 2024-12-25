@@ -241,6 +241,32 @@ game.Lighting.GlobalShadows = false
 game.Lighting.OutdoorAmbient = Color3.fromRGB(35, 35, 45)-- The function that takes place when the button is pressed
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "Esp Раша амбуша дюпа глаз фигуры и двери",
+   Callback = function()
+    local function highlightObject(objectName, color)
+    local object = game.Workspace:FindFirstChild(objectName)
+    if object then
+        local highlight = Instance.new("Highlight")
+        highlight.Adornee = object
+        highlight.FillColor = color
+        highlight.Parent = object
+    end
+end
+
+-- Red highlights
+local redColor = Color3.new(1, 0, 0)
+highlightObject("AmbushMoving", redColor)
+highlightObject("RushMoving", redColor)
+highlightObject("DoorFake", redColor)
+highlightObject("Eyes", redColor)
+highlightObject("FigureRig", redColor)
+
+-- Blue highlights
+local blueColor = Color3.new(0, 0, 1)
+highlightObject("Door", blueColor)
+   end,
+})
 local Tab = Window:CreateTab("Моды",14168652350)
 local Button = Tab:CreateButton({
 Name = "Жуткий мод",
