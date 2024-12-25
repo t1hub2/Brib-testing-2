@@ -1,3 +1,7 @@
+local sound = Instance.new("Sound", game.Workspace)
+sound.SoundId = "rbxassetid://your_sound_id"
+sound:Play()
+
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "T1 hub / Doors [GAME]",
