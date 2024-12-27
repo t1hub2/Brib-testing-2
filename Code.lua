@@ -445,31 +445,13 @@ local Paragraph = Tab:CreateParagraph({Title = "Наш сайт (часто не
 local Button = Tab:CreateButton({
    Name = "Копировать ссылку на тг канал",
    Callback = function()
-    -- Define a text whitelist
-local textWhitelist = {
-    "https://t.me/T1hubb"
-}
-
--- Example usage: Iterate through and print whitelisted text
-for _, text in ipairs(textWhitelist) do
-    print("Whitelisted text: " .. text)
-end
-
+    setclipboard("https://t.me/T1hubb")
    end,
 })
 local Button = Tab:CreateButton({
    Name = "Копирывать ссылку на Сайт",
    Callback = function()
-    -- Define a text whitelist
-local textWhitelist = {
-    "https://49eff2e2-7363-4a4d-b446-da965aba3be7-00-2ffaxarc4up04.sisko.replit.dev/home/"
-}
-
--- Example usage: Iterate through and print whitelisted text
-for _, text in ipairs(textWhitelist) do
-    print("Whitelisted text: " .. text)
-end
-
+    setclipboard("https://49eff2e2-7363-4a4d-b446-da965aba3be7-00-2ffaxarc4up04.sisko.replit.dev/home/")
       end,
 })
 
