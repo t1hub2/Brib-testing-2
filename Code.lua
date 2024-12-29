@@ -163,12 +163,6 @@ local Button = Tab:CreateButton({
    end,
 })
 local Button = Tab:CreateButton({
-   Name = "Путеводный сканер",
-   Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Teilsthebfdifan/ta-blets/refs/heads/main/guiding%20tablet.lua.txt"))()
-   end,
-})
-local Button = Tab:CreateButton({
    Name = "Земленой сканер",
    Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew201322/Doors-Scriptee/refs/heads/main/grass%20tablet.lua"))()-- The function that takes place when the button is pressed
@@ -291,7 +285,6 @@ local Button = Tab:CreateButton({
         highlight.Parent = object
     end
 end
-
 -- Red highlights
 local redColor = Color3.new(1, 0, 0)
 highlightObject("AmbushMoving", redColor)
