@@ -431,6 +431,7 @@ local Button = Tab:CreateButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/SizeChangerByNerd.lua"))()-- The function that takes place when the button is pressed
    end,
 })
+local Tab = Window:CreateTab("отель минус",12771221110)
 local Tab = Window:CreateTab("Создатели и тд.",4483362458)
 local Paragraph = Tab:CreateParagraph({Title = "Создатели", Content = "T1 и SCRIPTINGER"})
 local Paragraph = Tab:CreateParagraph({Title = "Телеграм", Content = "https://t.me/T1hubb"})
