@@ -432,6 +432,42 @@ local Button = Tab:CreateButton({
    end,
 })
 local Tab = Window:CreateTab("отель минус",12771221110)
+local Button = Tab:CreateButton({
+  Name = "Скелетонный ключ (Только Pre-run shop)",
+  Callback = function()
+   -- Reference to the TextLabel named "MyTextLabel"
+local textLabel = script.Parent:FindFirstChild("MyTextLabel")
+
+-- Function to make the TextLabel visible
+local function makeVisible()
+    if textLabel then
+        textLabel.Visible = true
+    else
+        warn("TextLabel 'MyTextLabel' not found!")
+    end
+end
+
+-- Call the function to make the TextLabel visible
+makeVisible() 
+    end    
+      local Button = Tab:CreateButton({
+  Name = "Крест (Только Pre-run shop)",
+  Callback = function()
+   -- Reference to the TextLabel named "MyTextLabel"
+local textLabel = script.Parent:FindFirstChild("MyTextLabel")
+
+-- Function to make the TextLabel visible
+local function makeVisible()
+    if textLabel then
+        textLabel.Visible = true
+    else
+        warn("TextLabel 'MyTextLabel' not found!")
+    end
+end
+
+-- Call the function to make the TextLabel visible
+makeVisible() 
+    end    
 local Tab = Window:CreateTab("Создатели и тд.",4483362458)
 local Paragraph = Tab:CreateParagraph({Title = "Создатели", Content = "T1 и SCRIPTINGER"})
 local Paragraph = Tab:CreateParagraph({Title = "Телеграм", Content = "https://t.me/T1hubb"})
