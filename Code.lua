@@ -34,7 +34,7 @@ local Window = Rayfield:CreateWindow({
 })
 Rayfield:Notify({
    Title = "Предупреждение",
-   Content = "Все скрипты были взяты из Legit mods offical discord! Даня не убивай меня :(",
+   Content = "Все скрипты были взяты из Legit MODS! Даня не убивай меня :(",
    Duration = 6.5,
    Image = "triangle-alert",
 })
