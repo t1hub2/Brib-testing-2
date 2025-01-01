@@ -12,7 +12,7 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
 })
 
---Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
+-- Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
@@ -20,10 +20,10 @@ local Tabs = {
 
 -- Create a toggle button to hide/show the GUI
 local toggleButton = Instance.new("TextButton")
-toggleButton.Text = "T1 hub"
+toggleButton.Text = "Toggle GUI"
 toggleButton.Size = UDim2.new(0, 100, 0, 50)
 toggleButton.Position = UDim2.new(0, 10, 0, 10)
-toggleButton.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+toggleButton.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 local isVisible = true
 
