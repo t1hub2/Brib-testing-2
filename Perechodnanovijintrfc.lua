@@ -15,19 +15,5 @@ local Window = Fluent:CreateWindow({
 -- Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "" }),
-    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+    
 }
-
--- Create a toggle button to hide/show the GUI
-local toggleButton = Instance.new("TextButton")
-toggleButton.Text = "Toggle GUI"
-toggleButton.Size = UDim2.new(0, 100, 0, 50)
-toggleButton.Position = UDim2.new(0, 10, 0, 10)
-toggleButton.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
-local isVisible = true
-
-toggleButton.MouseButton1Click:Connect(function()
-    isVisible = not isVisible
-    Window:SetVisible(isVisible)
-end)
