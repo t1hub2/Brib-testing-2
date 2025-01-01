@@ -15,15 +15,17 @@ local Window = Fluent:CreateWindow({
 -- Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
     Main = Window:AddTab({ Title = "Предметы", Icon = "gamepad-2" }),
-Tab:AddButton({
-    Title = "Банка Мочи",
+}
+
+-- Adding the button to the Main tab
+Tabs.Main:AddButton({
+    Title = "Банка мочи",
     Description = "Ну банка даёт скорость я хз",
     Callback = function()
         print("Hello, world!")
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/StarJug.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/StarJug.lua"))()
     end
 })
-}
 
 -- Function to check battery level once and warn the user
 local function checkBatteryLevel()
