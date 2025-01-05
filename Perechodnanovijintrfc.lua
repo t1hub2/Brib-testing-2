@@ -169,11 +169,10 @@ local Button = Tab:CreateButton({
          loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew201322/Doors-Scriptee/refs/heads/main/grass%20tablet.lua"))()-- The function that takes place when the button is pressed
     	end
 })
-local Tab = Window:CreateTab({
-	Name = "Монстры",
-	Icon = "13143005702",
-	ImageSource = "Material",
-	ShowTitle = true -- This will determine whether the big header text in the tab will show
+Tab:CreateSection("Монстры")
+local Label = Tab:CreateLabel({
+	Text = "здесь все Монстры",
+	Style = 2 -- Luna Labels Have 3 Styles : A Basic Label, A Green Information Label and A Red Warning Label. Look At The Following Image For More Details
 })
 local Button = Tab:CreateButton({
 	Name = "Заспавни Пандениона",
