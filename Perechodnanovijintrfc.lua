@@ -195,6 +195,12 @@ local Button = Tab:CreateButton({
          local sound = Instance.new("Sound", game.Workspace)
 sound.SoundId = "rbxassetid://8486683243"
 sound:Play()
+	Luna:Notification({ 
+	Title = "Luna Notification Example",
+	Icon = "notifications_active",
+	ImageSource = "Material",
+	Content = "This Is A Preview Of Luna's Dynamic Notification System Entailing Estimated/Calculated Wait Times, A Sleek Design, Icons, And A Glassmorphic Look"
+})
 })
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/adadasdada/refs/heads/main/Grumble"))()
     	end
