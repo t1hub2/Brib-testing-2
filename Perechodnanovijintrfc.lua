@@ -248,3 +248,10 @@ local Button = Tab:CreateButton({
          loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))()-- The function that takes place when the button is pressed
     	end
 })
+local Button = Tab:CreateButton({
+	Name = "Helor hub (От SCRIPTINGER)",
+	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
+    	Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/SCRIPTINGER/REMASTERED/refs/heads/main/KEY%20SYSTEM.LUA"))()-- The function that takes place when the button is pressed
+    	end
+})
