@@ -1,46 +1,29 @@
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
-local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+local Luna = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebula-Softworks/Luna-Interface-Suite/refs/heads/main/source.lua", true))()
+local Window = Luna:CreateWindow({
+	Name = "T1 hub", -- This Is Title Of Your Window
+	Subtitle = nil, -- A Gray Subtitle next To the main title.
+	LogoID = "82795327169782", -- The Asset ID of your logo. Set to nil if you do not have a logo for Luna to use.
+	LoadingEnabled = true, -- Whether to enable the loading animation. Set to false if you do not want the loading screen or have your own custom one.
+	LoadingTitle = "T1 hub", -- Header for loading screen
+	LoadingSubtitle = "by T1 and SCRIPTTINGER", -- Subtitle for loading screen
 
-local Window = Fluent:CreateWindow({
-    Title = "T1 hub " .. Fluent.Version,
-    SubTitle = "by T1 and SCRIPTINGER",
-    TabWidth = 100,
-    Size = UDim2.fromOffset(370, 300),
-    Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
-    Theme = "Dark",
-    MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
+	ConfigSettings = {
+		RootFolder = nil, -- The Root Folder Is Only If You Have A Hub With Multiple Game Scripts and u may remove it. DO NOT ADD A SLASH
+		ConfigFolder = "Big Hub" -- The Name Of The Folder Where Luna Will Store Configs For This Script. DO NOT ADD A SLASH
+	},
+
+	KeySystem = false, -- As Of Beta 6, Luna Has officially Implemented A Key System!
+	KeySettings = {
+		Title = "Luna Example Key",
+		Subtitle = "Key System",
+		Note = "Best Key System Ever! Also, Please Use A HWID Keysystem like Pelican, Luarmor etc. that provide key strings based on your HWID since putting a simple string is very easy to bypass",
+		SaveInRoot = false, -- Enabling will save the key in your RootFolder (YOU MUST HAVE ONE BEFORE ENABLING THIS OPTION)
+		SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+		Key = {"Example Key"}, -- List of keys that will be accepted by the system, please use a system like Pelican or Luarmor that provide key strings based on your HWID since putting a simple string is very easy to bypass
+		SecondAction = {
+			Enabled = true, -- Set to false if you do not want a second action,
+			Type = "Link", -- Link / Discord.
+			Parameter = "" -- If Type is Discord, then put your invite link (DO NOT PUT DISCORD.GG/). Else, put the full link of your key system here.
+		}
+	}
 })
-
--- Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
-local Tabs = {
-    Main = Window:AddTab({ Title = "Предметы", Icon = "gamepad-2" }),
-}
-
--- Adding the button to the Main tab
-Tabs.Main:AddButton({
-    Title = "Банка мочи",
-    Description = "Ну банка даёт скорость я хз",
-    Callback = function()
-        print("Hello, world!")
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/StarJug.lua"))()
-    end
-})
-
--- Function to check battery level once and warn the user
-local function checkBatteryLevel()
-    local batteryLevel = game:GetService("Players").LocalPlayer.BatteryLevel
-    if batteryLevel >= 15 and batteryLevel <= 20 then
-        -- Perform your specific task here
-        print("Battery level is between 15% and 20%. Performing the task.")
-        Fluent:Notify({
-            Title = "Эй!",
-            Content = "У тебя слабая батарея рекомендую подзарядится",
-            SubContent = "", -- Optional
-            Duration = 6.5 -- Set to nil to make the notification not disappear
-        })
-    end
-end
-
--- Check battery level once
-checkBatteryLevel()
