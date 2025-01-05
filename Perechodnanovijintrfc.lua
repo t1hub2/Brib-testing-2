@@ -68,3 +68,10 @@ local Button = Tab:CreateButton({
          loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/rocketLauncher.lua"))() -- The function that takes place when the button is pressed
     	end
 })
+local Button = Tab:CreateButton({
+	Name = "Черная дыра",
+	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
+    	Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Black%20Hole.lua"))()-- The function that takes place when the button is pressed
+    	end
+})
