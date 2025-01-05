@@ -1,7 +1,7 @@
 local Luna = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebula-Softworks/Luna-Interface-Suite/refs/heads/main/source.lua", true))()
 local Window = Luna:CreateWindow({
 	Name = "T1 hub", -- This Is Title Of Your Window
-	Subtitle = nil, -- A Gray Subtitle next To the main title.
+	Subtitle = "Мы делаем дорс веселым! От Т1 и SCRIPTTINGER" , -- A Gray Subtitle next To the main title.
 	LogoID = "82795327169782", -- The Asset ID of your logo. Set to nil if you do not have a logo for Luna to use.
 	LoadingEnabled = true, -- Whether to enable the loading animation. Set to false if you do not want the loading screen or have your own custom one.
 	LoadingTitle = "T1 hub", -- Header for loading screen
@@ -257,5 +257,17 @@ local Button = Tab:CreateButton({
 	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
     	Callback = function()
          loadstring(game:HttpGet("https://raw.githubusercontent.com/SCRIPTINGER/REMASTERED/refs/heads/main/KEY%20SYSTEM.LUA"))()-- The function that takes place when the button is pressed
+    	end
+})
+Tab:CreateSection("Читы 2")
+local Label = Tab:CreateLabel({
+	Text = "Здесь наши читы которые мы делали сами",
+	Style = 2 -- Luna Labels Have 3 Styles : A Basic Label, A Green Information Label and A Red Warning Label. Look At The Following Image For More Details
+})
+local Button = Tab:CreateButton({
+	Name = "полное освещениe",
+	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
+    	Callback = function()
+         loadstring(game:HttpGet('https://raw.githubusercontent.com/SCRIPTINGER/LIE1-HUB/refs/heads/main/Scripts/FullBright/false'))()-- The function that takes place when the button is pressed
     	end
 })
