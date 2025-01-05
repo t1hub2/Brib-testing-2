@@ -233,3 +233,4 @@ sound:Play()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/IdkMyNameLoll/34921473024732147312483297412/refs/heads/main/dozerspawner"))()
     	end
 })
+Tab:CreateSection("Читы")
