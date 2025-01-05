@@ -234,7 +234,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/IdkMyNameLoll/3492147
     	end
 })
 Tab:CreateSection("Читы")
-
+local Label = Tab:CreateLabel({
+	Text = "Здесь все существующие читы без ключевой системы.",
+	Style = 2 -- Luna Labels Have 3 Styles : A Basic Label, A Green Information Label and A Red Warning Label. Look At The Following Image For More Details
+})
 local Button = Tab:CreateButton({
 	Name = "Мс паинт v2 (не обновляется)",
 	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
