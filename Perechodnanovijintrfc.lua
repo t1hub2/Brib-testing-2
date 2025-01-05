@@ -234,3 +234,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/IdkMyNameLoll/3492147
     	end
 })
 Tab:CreateSection("Читы")
+local Button = Tab:CreateButton({
+	Name = "Мс паинт v2 (не обновляется)",
+	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
+    	Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()-- The function that takes place when the button is pressed
+    	end
+})
