@@ -131,3 +131,30 @@ local Button = Tab:CreateButton({
               loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/Scanner.lua"))()
     	end
 })
+local Button = Tab:CreateButton({
+	Name = "СВЯТОЙ КРЕСТ",
+	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
+    	Callback = function()
+         ---====== Load module ======---
+      local module = loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew201322/Doors-Scriptee/refs/heads/main/Crucifix%20Source.lua"))()
+
+      ---====== Create crucifix ======---
+      module.GiveCrucifix({
+         Type = 1, -- Crucifix type (1 = Guiding Light)
+         Uses = nil, -- nil for infinite uses
+         Resist = false, -- If true, can resist certain entities
+         EntitiesOnly = true, -- If true, works only on custom entities
+         IgnoreList = {} -- List of entities to ignore
+      })
+
+      --[[
+
+      CRUCIFIX TYPES:
+      -> 1: Guiding Light
+
+      COMING SOON:
+      -> Curious Light crucifix type
+
+      ]]--
+    	end
+})
