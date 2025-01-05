@@ -122,3 +122,12 @@ local Button = Tab:CreateButton({
          loadstring(game:HttpGet("https://pastebin.com/raw/iBBqfYzn"))()-- The function that takes place when the button is pressed
     	end
 })
+local Button = Tab:CreateButton({
+	Name = "1000 фпс сканер",
+	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
+    	Callback = function()
+         scanner_fps = 1000
+              _G.disable_static = false
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/Scanner.lua"))()
+    	end
+})
