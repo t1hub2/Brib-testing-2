@@ -33,6 +33,10 @@ local Tab = Window:CreateTab({
 	ImageSource = "Material",
 	ShowTitle = true -- This will determine whether the big header text in the tab will show
 })
+local Label = Tab:CreateLabel({
+	Text = "Здесь все предметы",
+	Style = 2 -- Luna Labels Have 3 Styles : A Basic Label, A Green Information Label and A Red Warning Label. Look At The Following Image For More Details
+})
 local Button = Tab:CreateButton({
 	Name = "Банка Мочи",
 	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
