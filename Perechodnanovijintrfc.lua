@@ -295,3 +295,11 @@ game.Lighting.GlobalShadows = false
 game.Lighting.OutdoorAmbient = Color3.fromRGB(35, 35, 45)-- The function that takes place when the button is pressed
     	end
 })
+Tab:CreateSection("Моды")
+local Button = Tab:CreateButton({
+	Name = "Жуткий мод",
+	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
+    	Callback = function()
+         loadstring(game:HttpGet('https://raw.githubusercontent.com/Anzor5458/Mode/refs/heads/main/Creepy%20mode'))()-- The function that takes place when the button is pressed
+    	end
+})
