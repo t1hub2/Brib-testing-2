@@ -201,7 +201,35 @@ sound:Play()
 	ImageSource = "Material",
 	Content = "Q для спавна"
 })
-})
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/adadasdada/refs/heads/main/Grumble"))()
+    	end
+})
+local Button = Tab:CreateButton({
+	Name = "Дозер",
+	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
+    	Callback = function()
+         local sound = Instance.new("Sound", game.Workspace)
+sound.SoundId = "rbxassetid://8486683243"
+sound:Play()
+    Luna:Notification({ 
+	Title = "Подсказка!",
+	Icon = "notifications_active",
+	ImageSource = "Material",
+	Content = "Он спавнится автоматически!"
+})
+	_G.dozerSpawnerSettings = {
+    dozerSpawnCD = 1,
+    ticksBeforeChecking = 10,
+    tomorrowTexts = 10,
+    SpawnerSettings = {
+        SpawnByUser = false, --set to true if you want to spawn Dozer
+        SpawnKeybind = Enum.KeyCode.Z,
+        SpawnRandomSettings = {
+            MathRandomSpawn1 = 10,
+            MathRandomSpawn2 = 15
+        }
+    }
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IdkMyNameLoll/34921473024732147312483297412/refs/heads/main/dozerspawner"))()
     	end
 })
