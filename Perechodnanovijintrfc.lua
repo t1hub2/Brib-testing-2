@@ -158,3 +158,10 @@ local Button = Tab:CreateButton({
       ]]--
     	end
 })
+local Button = Tab:CreateButton({
+	Name = "Земленой сканер",
+	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
+    	Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew201322/Doors-Scriptee/refs/heads/main/grass%20tablet.lua"))()-- The function that takes place when the button is pressed
+    	end
+})
