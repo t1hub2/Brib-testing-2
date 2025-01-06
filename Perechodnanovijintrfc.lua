@@ -342,3 +342,15 @@ local Button = Tab:CreateButton({
          loadstring(game:HttpGet("https://raw.githubusercontent.com/Teilsthebfdifan/Guiding-modhub/refs/heads/main/ExplodingHotel.lua"))()-- The function that takes place when the button is pressed
     	end
 })
+Tab:CreateSection("Крутые фичи")
+local Label = Tab:CreateLabel({
+	Text = "Здесь всякие крутые фичи которые я нашел",
+	Style = 2 -- Luna Labels Have 3 Styles : A Basic Label, A Green Information Label and A Red Warning Label. Look At The Following Image For More Details
+})
+local Button = Tab:CreateButton({
+	Name = "Синий портал",
+	Description = "не работает на телефонах", -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
+    	Callback = function()
+         loadstring(game:HttpGet("https://pastebin.com/raw/HT8jgqAY"))()-- The function that takes place when the button is pressed
+    	end
+})
