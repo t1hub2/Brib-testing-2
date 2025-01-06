@@ -375,3 +375,23 @@ local Button = Tab:CreateButton({
          loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/VIRIDIS%20RIFT%20ORIGINAL"))()-- The function that takes place when the button is pressed
     	end
 })
+Tab:CreateSection("бэйджики")
+local Label = Tab:CreateLabel({
+	Text = "Здесь бэйджи которые я делал сам",
+	Style = 2 -- Luna Labels Have 3 Styles : A Basic Label, A Green Information Label and A Red Warning Label. Look At The Following Image For More Details
+})
+local Button = Tab:CreateButton({
+	Name = "A-5000",
+	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
+    	Callback = function()
+         ---====== Load achievement giver ======---
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+---====== Display achievement ======---
+achievementGiver({
+    Title = "А-5000",
+    Desc = "Мои ноги посинели...",
+    Reason = "Дойти до А-5000",
+    Image = "rbxassestid//:73046765001646"
+})
+    	end
