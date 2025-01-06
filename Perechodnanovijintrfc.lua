@@ -395,57 +395,9 @@ achievementGiver({
     Image = "rbxassestid//:73046765001646"
 })
     	end
-local Button = Tab:CreateButton({
-   Name = "Банано-пушка.lua",
-   Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/BananaGunByNerd.lua"))()-- The function that takes place when the button is pressed
-   end
+Tab:CreateSection("бэйджики")
+local Label = Tab:CreateLabel({
+	Text = "Здесь все от легенды.. NERD V5 FOREVER!",
+	Style = 2 -- Luna Labels Have 3 Styles : A Basic Label, A Green Information Label and A Red Warning Label. Look At The Following Image For More Details
 })
-local Button = Tab:CreateButton({
-   Name = "Будь всем.lua",
-   Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/BeEverything.lua"))()-- The function that takes place when the button is pressed
-   end
-})
-local Button = Tab:CreateButton({
-   Name = "Пушка-всего.lua",
-   Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/EverythingGunByNeRD.lua"))()-- The function that takes place when the button is pressed
-   end
-})
-local Button = Tab:CreateButton({
-   Name = "Бессмертность-от-нерда.lua",
-   Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/GodModeByNerd.lua"))()-- The function that takes place when the button is pressed
-   end
-})
-local Button = Tab:CreateButton({
-   Name = "Святая-граната.lua",
-   Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/HolyGrenadeByNerd.lua"))()-- The function that takes place when the button is pressed
-   end
-})
-local Button = Tab:CreateButton({
-   Name = "Ледяная-пушка.lua",
-   Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/IcegunByNerd.lua"))()-- The function that takes place when the button is pressed
-   end
-})
-local Button = Tab:CreateButton({
-   Name = "Бесконечные-витаминки.lua",
-   Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/Inf_Vitamins.lua"))()-- The function that takes place when the button is pressed
-   end
-})
-local Button = Tab:CreateButton({
-   Name = "Магнит-от-нерда.lua",
-   Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/MagnetByNerd.lua"))()-- The function that takes place when the button is pressed
-   end
-})
-local Button = Tab:CreateButton({
-   Name = "Изменение-размера-от-нерда.lua",
-   Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/SizeChangerByNerd.lua"))()-- The function that takes place when the button is pressed
-   end
-})    
+		
