@@ -296,6 +296,10 @@ game.Lighting.OutdoorAmbient = Color3.fromRGB(35, 35, 45)-- The function that ta
     	end
 })
 Tab:CreateSection("Моды")
+local Label = Tab:CreateLabel({
+	Text = "Здесь всякие моды",
+	Style = 2 -- Luna Labels Have 3 Styles : A Basic Label, A Green Information Label and A Red Warning Label. Look At The Following Image For More Details
+})
 local Button = Tab:CreateButton({
 	Name = "Жуткий мод",
 	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
