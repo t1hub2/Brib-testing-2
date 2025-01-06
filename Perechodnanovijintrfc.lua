@@ -407,3 +407,17 @@ local Button = Tab:CreateButton({
          loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/BananaGunByNerd.lua"))()-- The function that takes place when the button is pressed
     	end
 })		
+local Button = Tab:CreateButton({
+	Name = "Будь всем.lua",
+	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
+    	Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/BeEverything.lua"))()-- The function that takes place when the button is pressed
+    	end
+})
+local Button = Tab:CreateButton({
+	Name = "Пушка-всего.lua",
+	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
+    	Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/EverythingGunByNeRD.lua"))()-- The function that takes place when the button is pressed
+    	end
+})
