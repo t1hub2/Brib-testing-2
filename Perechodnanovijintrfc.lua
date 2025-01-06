@@ -259,6 +259,51 @@ local Button = Tab:CreateButton({
          loadstring(game:HttpGet("https://raw.githubusercontent.com/SCRIPTINGER/REMASTERED/refs/heads/main/KEY%20SYSTEM.LUA"))()-- The function that takes place when the button is pressed
     	end
 })
+local Button = Tab:CreateButton({
+	Name = "Админ панелка грейс",
+	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
+    	Callback = function()
+         _G.GraceMonstersSettings = {
+
+	ExperimentalSettings = {
+		ShowRushNodes = false
+	},
+
+	CrucifixSettings = {
+		Material = Enum.Material.Neon,
+		Color = Color3.fromRGB(134, 156, 253),
+		Infinite = false
+	},
+
+	MonsterSettings = {
+		FollowRushNodes = false --works for carnation and slugfish only
+		--and might be buggy and can cause carnation/slugfish to rotate in random directions
+	},
+
+	CarnationSettings = {
+		sDelay = 5,
+		Speed = 100,
+		Damage = 135,
+		HitboxSize = 25,
+		RequiredHidingSpotsToSpawn = 3
+	},
+
+	SlugfishSettings = {
+		sDelay = 5,
+		Speed = 250,
+		Damage = 200,
+		HitboxSize = 10,
+		RequiredHidingSpotsToSpawn = 0
+	},
+
+	BloodRain = {
+		RemoveCeilings = true
+	}
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IdkMyNameLoll/PublicScripts/refs/heads/main/GraceEntitiesScript"))()-- The function that takes place when the button is pressed
+    	end
+})
 Tab:CreateSection("Читы 2")
 local Label = Tab:CreateLabel({
 	Text = "Здесь наши читы которые мы делали сами",
