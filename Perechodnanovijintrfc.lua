@@ -395,9 +395,15 @@ achievementGiver({
     Image = "rbxassestid//:73046765001646"
 })
     	end
-Tab:CreateSection("бэйджики")
+Tab:CreateSection("от MrNerdO")
 local Label = Tab:CreateLabel({
 	Text = "Здесь все от легенды.. NERD V5 FOREVER!",
 	Style = 2 -- Luna Labels Have 3 Styles : A Basic Label, A Green Information Label and A Red Warning Label. Look At The Following Image For More Details
 })
-		
+local Button = Tab:CreateButton({
+	Name = "Банано-пушка.lua",
+	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
+    	Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/refs/heads/main/BananaGunByNerd.lua"))()-- The function that takes place when the button is pressed
+    	end
+})		
