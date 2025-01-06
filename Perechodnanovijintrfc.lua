@@ -354,3 +354,17 @@ local Button = Tab:CreateButton({
          loadstring(game:HttpGet("https://pastebin.com/raw/HT8jgqAY"))()-- The function that takes place when the button is pressed
     	end
 })
+local Button = Tab:CreateButton({
+	Name = "Revive защита двери",
+	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
+    	Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/Revivelight%20Door%20protection%20BY%20CUSTOM%20DOORS"))()-- The function that takes place when the button is pressed
+    	end
+})
+local Button = Tab:CreateButton({
+	Name = "Желтый портал",
+	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
+    	Callback = function()
+         loadstring(game:HttpGet("https://pastebin.com/raw/HT8jgqAY"))()-- The function that takes place when the button is pressed
+    	end
+})
