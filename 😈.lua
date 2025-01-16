@@ -1,13 +1,13 @@
 local Link = loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostDuckyy/UI-Libraries/refs/heads/main/Playstation%20Ui%20Library/source.lua"))()
 
-local Win = Link:CreateWindow('Name','Yeah Info') -- :CreateWindow(Title,Info) Note: info no space
+local Win = Link:CreateWindow('T1 hub [REMAKE]','От Т1 и SCRIPTINGER') -- :CreateWindow(Title,Info) Note: info no space
 
 local Tab = Win:addPage('Tab', 2, true, 6) -- :addPage(Title, Scoll Size, Visible, elementspacing)
 -- Note: Dont have update function
 
 
 -- Label
-Tab:addLabel('This a Label', 'Label info') -- :addLabel(Title, Info)
+Tab:addLabel('Че читать та?', 'O i o a e o u i i i a e o') -- :addLabel(Title, Info)
 
 -- Button
 Tab:addButton('This a button', function() -- :addButton(Title, callback)
