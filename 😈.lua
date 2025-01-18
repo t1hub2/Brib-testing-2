@@ -24,6 +24,11 @@ _G.RegenAmount = 0.1 -- How much durability it will regenerate after the chosen 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Buffed%20Shears%20On%20Everything.lua"))()
 end)
 
+Tab:addButton('Птичка', function() -- :addButton(Title, callback)
+    print('Clicked Button')
+loadstring(game:HttpGet("https://pastebin.com/raw/PFERptU5", true))()
+end)
+
 local Tab = Win:addPage('Фичи', 2, true, 6) -- :addPage(Title, Scoll Size, Visible, elementspacing)
 
 -- Toggles
