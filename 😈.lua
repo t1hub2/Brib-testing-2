@@ -48,3 +48,8 @@ Tab:addButton('Комната хранилища', function() -- :addButton(Titl
     print('Clicked Button')
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAcceleration/Comet-Development/refs/heads/main/Doors/Game/CustomRooms/Storage.lua"))()
 end)
+
+Tab:addButton('Бесконечное возрождение', function() -- :addButton(Title, callback)
+    print('Clicked Button')
+game.replicatedstorage.bricks.revive:FireServer()
+end)
