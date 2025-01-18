@@ -41,3 +41,10 @@ game.Players.LocalPlayer.Character:SetAttribute("CanJump", true)
         print('False') -- print false
     end
 end)
+
+local Tab = Win:addPage('Отель минус', 2, true, 6) -- :addPage(Title, Scoll Size, Visible, elementspacing)
+
+Tab:addButton('Комната хранилища', function() -- :addButton(Title, callback)
+    print('Clicked Button')
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAcceleration/Comet-Development/refs/heads/main/Doors/Game/CustomRooms/Storage.lua"))()
+end)
