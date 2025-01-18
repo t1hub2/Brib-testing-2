@@ -11,7 +11,13 @@ end)
 
 local Tab = Win:addPage('Фичи', 2, true, 6) -- :addPage(Title, Scoll Size, Visible, elementspacing)
 
-Tab:addButton('Включение прыжка', function() -- :addButton(Title, callback)
-    print('Clicked Button')
+-- Toggles
+Tab:addToggle('Прыжок', function(value) -- :addToggle(Title, callback)
+    if value then -- if true then
 game.Players.LocalPlayer.Character:SetAttribute("CanJump", true)
+            print('True') -- print true
+    else -- else false
+       game.Players.LocalPlayer.Character:SetAttribute("CanJump", false)
+        print('False') -- print false
+    end
 end)
