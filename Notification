@@ -12,4 +12,4 @@ local function sendNotification(title, text, button1, button2, duration, icon)
     end
     StarterGui:SetCore("SendNotification", notificationData)
 end
-sendNotification("Добро пожаловать!", "Спасибо за выбор нас!", "Закрыть", "", 95, "rbxassetid://125002679211107")
+sendNotification("Добро пожаловать!", "Спасибо за выбор нас!", "Закрыть", "", 5, "rbxassetid://125002679211107")
