@@ -1,0 +1,15 @@
+local StarterGui = game:GetService("StarterGui")
+local function sendNotification(title, text, button1, button2, duration, icon)
+    local notificationData = {
+        Title = title,
+        Text = text,
+        Button1 = button1,
+        Button2 = button2,
+        Duration = duration
+    }
+    if icon then
+        notificationData.Icon = icon
+    end
+    StarterGui:SetCore("SendNotification", notificationData)
+end
+sendNotification("Добро пожаловать!", "Спасибо за выбор нас!", "Закрыть", "", 95, "rbxassetid://125002679211107")
