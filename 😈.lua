@@ -28,6 +28,12 @@ Tab:addButton('Птичка', function() -- :addButton(Title, callback)
 loadstring(game:HttpGet("https://pastebin.com/raw/PFERptU5", true))()
 end)
 
+Tab:addButton('Джек', function() -- :addButton(Title, callback)
+    print('Clicked Button')
+local tool = game:GetObjects("rbxassetid://13134833039")[1]
+tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
 local Tab = Win:addPage('Фичи', 2, true, 6) -- :addPage(Title, Scoll Size, Visible, elementspacing)
 
 -- Toggles
