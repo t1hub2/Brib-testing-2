@@ -44,6 +44,11 @@ Tab:addButton('Глитч-Раш', function() -- :addButton(Title, callback)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/kodbolx/kodbolhub/refs/heads/main/glitchrushplushie.lua"))()
 end)
 
+Tab:addButton('М249', function() -- :addButton(Title, callback)
+    print('Clicked Button')
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hi822010/Extras-Gliese-Hub-Doors/refs/heads/main/M249"))()
+end)
+
 local Tab = Win:addPage('Фичи', 2, true, 6) -- :addPage(Title, Scoll Size, Visible, elementspacing)
 
 -- Toggles
