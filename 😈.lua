@@ -39,6 +39,11 @@ Tab:addButton('Виридис рифт', function() -- :addButton(Title, callbac
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/VIRIDIS%20RIFT%20ORIGINAL"))()
 end)
 
+Tab:addButton('Глитч-Раш', function() -- :addButton(Title, callback)
+    print('Clicked Button')
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kodbolx/kodbolhub/refs/heads/main/glitchrushplushie.lua"))()
+end)
+
 local Tab = Win:addPage('Фичи', 2, true, 6) -- :addPage(Title, Scoll Size, Visible, elementspacing)
 
 -- Toggles
