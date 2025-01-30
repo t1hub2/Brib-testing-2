@@ -71,13 +71,3 @@ end)
 Tab:addButton('Бесконечное возрождение', function() -- :addButton(Title, callback)
 game.replicatedstorage.bricks.revive:FireServer()
 end)
-
-local LogService = game:GetService("LogService")
-
-LogService.MessageOut:Connect(function(message, messageType)
-    if messageType == Enum.MessageType.MessageError then
-        print("Найдена ошибка в коде!: " .. message)
-    end
-end)
-
-print("Error detection script is running.")
