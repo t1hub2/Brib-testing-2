@@ -33,7 +33,8 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local Tab = Window:CreateTab("Анимации спавна", 4483362458) -- Tab title and image
+local Tab = Window:CreateTab("Анимации спавна", 84018918211093) -- Tab title and image
+local Label = Tab:CreateLabel("Здесь все стартовые анимки (Kj нету)", 129089434079562, Color3.fromRGB(145, 16, 16), false) -- Title, Icon, Color, IgnoreTheme
 local Button = Tab:CreateButton({
    Name = "Сильнейший Герой",
    Callback = function()
@@ -50,5 +51,275 @@ local Button = Tab:CreateButton({
 
       local playAnim2 = humanoid:LoadAnimation(anim2)
       playAnim2:Play()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Хиро хантер",
+   Callback = function()
+    local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim2 = Instance.new("Animation")
+anim2.AnimationId = "rbxassetid://15957376722"
+
+local playAnim2 = humanoid:LoadAnimation(anim2)
+playAnim2:Play()
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Геноз",
+   Callback = function()
+   local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim2 = Instance.new("Animation")
+anim2.AnimationId = "rbxassetid://15957374019"
+
+local playAnim2 = humanoid:LoadAnimation(anim2)
+playAnim2:Play()
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Соник",
+   Callback = function()
+    local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim2 = Instance.new("Animation")
+anim2.AnimationId = "rbxassetid://15957361339"
+
+local playAnim2 = humanoid:LoadAnimation(anim2)
+playAnim2:Play()
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Брутальный демон",
+   Callback = function()
+    local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim2 = Instance.new("Animation")
+anim2.AnimationId = "rbxassetid://15957371124"
+
+local playAnim2 = humanoid:LoadAnimation(anim2)
+playAnim2:Play()
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Блэйд мастер",
+   Callback = function()
+    local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim2 = Instance.new("Animation")
+anim2.AnimationId = "rbxassetid://15983615423"
+
+local playAnim2 = humanoid:LoadAnimation(anim2)
+playAnim2:Play()
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Мартиал артистс",
+   Callback = function()
+    local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim2 = Instance.new("Animation")
+anim2.AnimationId = "rbxassetid://18435303746"
+
+local playAnim2 = humanoid:LoadAnimation(anim2)
+playAnim2:Play()
+
+   end,
+})
+local Tab = Window:CreateTab("Ульта",105053222544471)
+local Label = Tab:CreateLabel("Ульты", 121936658676303, Color3.fromRGB(0, 0, 0), false)
+local Button = Tab:CreateButton({
+   Name = "Сильнейший Герой",
+   Callback = function()
+    local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim2 = Instance.new("Animation")
+anim2.AnimationId = "rbxassetid://12447707844"
+
+local playAnim2 = humanoid:LoadAnimation(anim2)
+playAnim2:Play()
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Хиро хантер",
+   Callback = function()
+    local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim2 = Instance.new("Animation")
+anim2.AnimationId = "rbxassetid://12342141464"
+
+local playAnim2 = humanoid:LoadAnimation(anim2)
+playAnim2:Play()
+         
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Геноз",
+   Callback = function()
+    local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://12772543293"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+         
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Соник",
+   Callback = function()
+    local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://13499771836"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+wait(2.3)
+game.Players.LocalPlayer.Character.Head.Transparency = 1
+game.Players.LocalPlayer.Character.Torso.Transparency = 1
+game.Players.LocalPlayer.Character["Left Arm"].Transparency = 1
+game.Players.LocalPlayer.Character["Right Arm"].Transparency = 1
+game.Players.LocalPlayer.Character["Left Leg"].Transparency = 1
+game.Players.LocalPlayer.Character["Right Leg"].Transparency = 1
+game.Players.LocalPlayer.Character.Head.face.Transparency = 1
+wait(2)
+game.Players.LocalPlayer.Character.Head.Transparency = 0
+game.Players.LocalPlayer.Character.Torso.Transparency = 0
+game.Players.LocalPlayer.Character["Left Arm"].Transparency = 0
+game.Players.LocalPlayer.Character["Right Arm"].Transparency = 0
+game.Players.LocalPlayer.Character["Left Leg"].Transparency = 0
+game.Players.LocalPlayer.Character["Right Leg"].Transparency = 0
+game.Players.LocalPlayer.Character.Head.face.Transparency = 0
+local anim2 = Instance.new("Animation")
+anim2.AnimationId = "rbxassetid://13497875049"
+
+local playAnim2 = humanoid:LoadAnimation(anim2)
+playAnim2:Play()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Брутальный демон",
+   Callback = function()
+    local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim2 = Instance.new("Animation")
+anim2.AnimationId = "rbxassetid://14733282425"
+
+local playAnim2 = humanoid:LoadAnimation(anim2)
+playAnim2:Play()
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Блэйд мастер",
+   Callback = function()
+    local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://15391323441"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+         
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Вайлд психик",
+   Callback = function()
+    local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://16734584478"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "KJ",
+   Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/QSQysq1J"))()
+   end,
+})
+local Tab = Window:CreateTab("хуйня какаято",4483362458)
+local Section = Tab:CreateSection("Еффекты")
+local Button = Tab:CreateButton({
+   Name = "Черная вспышка",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/kMZJF27h"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Черная вспышка аура",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/4jVHNua4"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Section = Tab:CreateSection("Фейковые персы")
+local Button = Tab:CreateButton({
+   Name = "Скибиди хуйня",
+   Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/tUDRcKB8"))()-- The function that takes place when the button is pressed
    end,
 })
