@@ -33,3 +33,20 @@ local Window = Rayfield:CreateWindow({
    }
 })
 local Tab = Window:CreateTab("Анимации спавна", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "Сильнейший Герой",
+   Callback = function()
+    local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim2 = Instance.new("Animation")
+anim2.AnimationId = "rbxassetid://15957366251"
+
+local playAnim2 = humanoid:LoadAnimation(anim2)
+playAnim2:Play()
+
+   end,
+})
