@@ -9,7 +9,7 @@ end
 
 local Window = Rayfield:CreateWindow({
     Name = "T1 hub: Remake [TSB]",
-    Icon = "", -- Use a valid Roblox Image ID or Lucide Icon string.
+    Icon = "0", -- Use a valid Roblox Image ID or Lucide Icon string.
     LoadingTitle = "Загрузка...",
     LoadingSubtitle = "От Скрипттингера и Т1",
     Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
