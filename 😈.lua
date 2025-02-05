@@ -54,50 +54,57 @@ _G.RegenAmount = 0.1 -- How much durability it will regenerate after the chosen 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Buffed%20Shears%20On%20Everything.lua"))()
    end,
 })
-Tab:addButton('Птичка', function() -- :addButton(Title, callback)
-loadstring(game:HttpGet("https://pastebin.com/raw/PFERptU5", true))()
-end)
-
-Tab:addButton('Джек', function() -- :addButton(Title, callback)
-    print('Clicked Button')
-local tool = game:GetObjects("rbxassetid://13134833039")[1]
-tool.Parent = game.Players.LocalPlayer.Backpack
-end)
-
-Tab:addButton('Виридис рифт', function() -- :addButton(Title, callback)
-    print('Clicked Button')
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/VIRIDIS%20RIFT%20ORIGINAL"))()
-end)
-
-Tab:addButton('Глитч-Раш', function() -- :addButton(Title, callback)
-    print('Clicked Button')
-loadstring(game:HttpGet("https://raw.githubusercontent.com/kodbolx/kodbolhub/refs/heads/main/glitchrushplushie.lua"))()
-end)
-
-Tab:addButton('М249', function() -- :addButton(Title, callback)
-    print('Clicked Button')
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hi822010/Extras-Gliese-Hub-Doors/refs/heads/main/M249"))()
-end)
-
-local Tab = Win:addPage('Фичи', 2, true, 6) -- :addPage(Title, Scoll Size, Visible, elementspacing)
-
--- Toggles
-Tab:addToggle('Прыжок', function(value) -- :addToggle(Title, callback)
-    if value then -- if true then
-game.Players.LocalPlayer.Character:SetAttribute("CanJump", true)
-            print('True') -- print true
-    else -- else false
-       game.Players.LocalPlayer.Character:SetAttribute("CanJump", false)
-        print('False') -- print false
-    end
-end)
-
-local Tab = Win:addPage('Отель минус', 2, true, 6) -- :addPage(Title, Scoll Size, Visible, elementspacing)
-
-Tab:addButton('Комната хранилища', function() -- :addButton(Title, callback)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAcceleration/Comet-Development/refs/heads/main/Doors/Game/CustomRooms/Storage.lua"))()
-end)
-
-Tab:addButton('Бесконечное возрождение', function() -- :addButton(Title, callback)
-game.replicatedstorage.bricks.revive:FireServer()
-end)
+local Button = Tab:CreateButton({
+   Name = "Птичка",
+   Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/PFERptU5", true))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Джек",
+   Callback = function()
+    local tool = game:GetObjects("rbxassetid://13134833039")[1]
+tool.Parent = game.Players.LocalPlayer.Backpack -- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Виридис рифт",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/VIRIDIS%20RIFT%20ORIGINAL"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Глитч-Раш",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/kodbolx/kodbolhub/refs/heads/main/glitchrushplushie.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "М249",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hi822010/Extras-Gliese-Hub-Doors/refs/heads/main/M249"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Tab = Window:CreateTab("Фичи",4483362458)
+local Toggle = Tab:CreateToggle({
+   Name = "Прыжок",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   game.Players.LocalPlayer.Character:SetAttribute("CanJump", true)
+   game.Players.LocalPlayer.Character:SetAttribute("CanJump", false)
+   end,
+})
+local Tab = Window:CreateTab("Отель минус",4483362458)
+local Button = Tab:CreateButton({
+   Name = "Комната хранилища",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAcceleration/Comet-Development/refs/heads/main/Doors/Game/CustomRooms/Storage.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Бесконечное возрождение",
+   Callback = function()
+    game.replicatedstorage.bricks.revive:FireServer()
+   end,
+})
