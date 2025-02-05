@@ -84,16 +84,6 @@ local Button = Tab:CreateButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/hi822010/Extras-Gliese-Hub-Doors/refs/heads/main/M249"))()-- The function that takes place when the button is pressed
    end,
 })
-local Tab = Window:CreateTab("Фичи",4483362458)
-local Toggle = Tab:CreateToggle({
-   Name = "Прыжок",
-   CurrentValue = false,
-   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(Value)
-    game.Players.LocalPlayer.Character:SetAttribute("CanJump", true)
-   game.Players.LocalPlayer.Character:SetAttribute("CanJump", false)
-   end,
-})
 local Tab = Window:CreateTab("Отель минус",4483362458)
 local Button = Tab:CreateButton({
    Name = "Комната хранилища",
