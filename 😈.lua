@@ -1,12 +1,43 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/t1hub2/Brib-testing-2/refs/heads/main/Notification"))()
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
-local Win = Link:CreateWindow('T1 hub: Remake','От Т1 и SCRIPTINGER') -- :CreateWindow(Title,Info) Note: info no space
+local Window = Rayfield:CreateWindow({
+   Name = "T1 hub: Remake",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Загрузка",
+   LoadingSubtitle = "от Скрипттингера и Т1",
+   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
-local Tab = Win:addPage('Предметы', 2, true, 6) -- :addPage(Title, Scoll Size, Visible, elementspacing)
--- Note: Dont have update function
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
 
-Tab:addButton('Ножнецы', function() -- :addButton(Title, callback)
-        -- Spawner Customizations --
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+local Tab = Window:CreateTab("предметы",4483362458)
+local Button = Tab:CreateButton({
+   Name = "Ножнецы",
+   Callback = function()
+    -- Spawner Customizations --
 _G.Luck = 100 -- The chance of shears spawning in the game
 _G.Spawns = false -- If the shears can spawn naturally in the game
 -- Tool Customizations --
@@ -21,8 +52,8 @@ _G.RegenSpeed = 1 -- How fast the shears will regenerate after being used
 _G.RegenAmount = 0.1 -- How much durability it will regenerate after the chosen amount of time
 -- Loadstring --
 loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Buffed%20Shears%20On%20Everything.lua"))()
-end)
-
+   end,
+})
 Tab:addButton('Птичка', function() -- :addButton(Title, callback)
 loadstring(game:HttpGet("https://pastebin.com/raw/PFERptU5", true))()
 end)
