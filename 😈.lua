@@ -107,6 +107,13 @@ local Button = Tab:CreateButton({
    end,
 })
 local Button = Tab:CreateButton({
+   Name = "Сико-крест",
+   Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/hi822010/Extras-Gliese-Hub-Doors/refs/heads/main/Seek%20Crucifix'))()-- The function that takes place when the button is pressed
+   end,
+})
+local Tab = Window:CreateTab("Вау 0_0",4483362458)
+local Button = Tab:CreateButton({
    Name = "От глаз салли",
    Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LolSeek/SallyStuff/refs/heads/main/SallyPov"))()
