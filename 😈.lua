@@ -84,6 +84,22 @@ local Button = Tab:CreateButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/hi822010/Extras-Gliese-Hub-Doors/refs/heads/main/M249"))()-- The function that takes place when the button is pressed
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "Гличт куб",
+   Callback = function()
+    local rush = game:GetObjects("rbxassetid://98093854401365")[1]
+rush.Parent = game.Players.LocalPlayer.Backpack
+
+rush.Activated:Connect(function()
+local scream = Instance.new("Sound", workspace)
+scream.SoundId = "rbxassetid://5257382967"
+scream.Volume = 2
+scream:Play()
+end)
+
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("glitch_cube loaded = true",true)
+   end,
+})
 local Tab = Window:CreateTab("Отель минус",4483362458)
 local Button = Tab:CreateButton({
    Name = "Комната хранилища",
