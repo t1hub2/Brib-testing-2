@@ -100,6 +100,12 @@ end)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("glitch_cube loaded = true",true)
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "ОГНЕМЕТ",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JohnyGamingLUA/FlamethrowerDOORS/main/obfuscated.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
 local Tab = Window:CreateTab("Отель минус",4483362458)
 local Button = Tab:CreateButton({
    Name = "Комната хранилища",
