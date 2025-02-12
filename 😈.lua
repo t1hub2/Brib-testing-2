@@ -106,6 +106,12 @@ local Button = Tab:CreateButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/JohnyGamingLUA/FlamethrowerDOORS/main/obfuscated.lua"))()-- The function that takes place when the button is pressed
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "От глаз салли",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LolSeek/SallyStuff/refs/heads/main/SallyPov"))()
+   end,
+})
 local Tab = Window:CreateTab("Отель минус",4483362458)
 local Button = Tab:CreateButton({
    Name = "Комната хранилища",
