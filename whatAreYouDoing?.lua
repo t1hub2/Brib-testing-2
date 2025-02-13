@@ -4,7 +4,7 @@ local RunService = game:GetService("RunService")
 Players.PlayerAdded:Connect(function(player)
     player.Chatted:Connect(function(message)
         if message == "/whatAreYouDoing?" then
-            print("Command /whatAreYouDoing? Was not found.")
+            require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Команда /whatAreYouDoing не была найдена.",true)
             wait(math.random(5, 10)) -- Wait for 5-10 seconds
             -- Create a ScreenGui to turn the screen dark
             local screenGui = Instance.new("ScreenGui")
