@@ -1,15 +1,4 @@
-local Players = game:GetService("Players")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
-local darkenEvent = Instance.new("RemoteEvent")
-darkenEvent.Name = "DarkenScreenEvent"
-darkenEvent.Parent = ReplicatedStorage
-
-Players.PlayerAdded:Connect(function(player)
-    player.Chatted:Connect(function(message)
-        if message == "/whatAreYouDoing?" then
-            -- Server message about invalid command
-            game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Command /whatAreYouDoing? Doesn't exist", "All")
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Command /whatAreYouDoing? Doesn't exist", "All")
             wait(math.random(5, 10)) -- Wait on server
             -- Notify client to darken screen
             darkenEvent:FireClient(player)
