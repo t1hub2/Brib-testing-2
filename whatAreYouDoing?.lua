@@ -39,8 +39,3 @@ darkenEvent.OnClientEvent:Connect(function()
         frame.BackgroundTransparency = i
         wait(0.1)
     end
-
-    -- Remove after 5 seconds
-    wait(5)
-    screenGui:Destroy()
-end)
