@@ -59,3 +59,83 @@ _G.RegenAmount = 0.1 -- How much durability it will regenerate after the chosen 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Buffed%20Shears%20On%20Everything.lua"))()
     end,
 })
+
+local Button = Tab:Button({
+    Title = "Птичка Киви",
+    Desc = "Киви",
+    Callback = function()
+        print("Clicked!")
+loadstring(game:HttpGet("https://pastebin.com/raw/PFERptU5", true))()
+    end,
+})
+
+local Button = Tab:Button({
+    Title = "Джек",
+    Desc = "УГА БУГА",
+    Callback = function()
+        print("Clicked!")
+local tool = game:GetObjects("rbxassetid://13134833039")[1]
+tool.Parent = game.Players.LocalPlayer.Backpack
+    end,
+})
+
+local Button = Tab:Button({
+    Title = "Виридис рифт",
+    Desc = "Зелёное",
+    Callback = function()
+        print("Clicked!")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/VIRIDIS%20RIFT%20ORIGINAL"))()
+    end,
+})
+
+local Button = Tab:Button({
+    Title = "Глитч-Раш",
+    Desc = "01010101",
+    Callback = function()
+        print("Clicked!")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/kodbolx/kodbolhub/refs/heads/main/glitchrushplushie.lua"))()
+    end,
+})
+
+local Button = Tab:Button({
+    Title = "М249",
+    Desc = "Пиу пиу",
+    Callback = function()
+        print("Clicked!")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/hi822010/Extras-Gliese-Hub-Doors/refs/heads/main/M249"))()
+    end,
+})
+
+local Button = Tab:Button({
+    Title = "Гличт куб",
+    Desc = "01010010",
+    Callback = function()
+        print("Clicked!")
+            local rush = game:GetObjects("rbxassetid://98093854401365")[1]
+rush.Parent = game.Players.LocalPlayer.Backpack
+
+rush.Activated:Connect(function()
+local scream = Instance.new("Sound", workspace)
+scream.SoundId = "rbxassetid://5257382967"
+scream.Volume = 2
+scream:Play()
+    end,
+})
+
+local Button = Tab:Button({
+    Title = "ОГНЕМЕТ",
+    Desc = "*огонь*",
+    Callback = function()
+        print("Clicked!")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/JohnyGamingLUA/FlamethrowerDOORS/main/obfuscated.lua"))()
+    end,
+})
+
+local Button = Tab:Button({
+    Title = "Сико-крест",
+    Desc = "Сик",
+    Callback = function()
+        print("Clicked!")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/hi822010/Extras-Gliese-Hub-Doors/refs/heads/main/Seek%20Crucifix'))()
+    end,
+})
