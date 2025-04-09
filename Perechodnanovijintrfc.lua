@@ -31,3 +31,11 @@ Window:EditOpenButton({
     Enabled = true,   -- true or false
     Draggable = true, -- true or false
 })
+
+local Button = Tab:Button({
+    Title = "Кликни на меня нах",
+    Desc = "",
+    Callback = function()
+        print("Clicked!")
+    end,
+})
