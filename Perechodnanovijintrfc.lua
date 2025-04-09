@@ -7,9 +7,9 @@ local Window = WindUI:CreateWindow({
     Folder = "T1hubRemake", -- Folder name for saving data (And key)
     Size = UDim2.fromOffset(480, 360), -- UI Size
     KeySystem = { -- Creates key system
-        Key = "1234", -- key
-        Note = "The Key is 1234", -- Note
-        URL = "https://github.com/Footagesus/WindUI", -- URL To get key (example: Discord)
+        Key = "T1hub_FREE_NOT_RANDOM_3343335", -- key
+        Note = "Ключ получи через кнопку Get Key", -- Note
+        URL = "https://lootdest.org/s?PXJLZF1X", -- URL To get key (example: Discord)
         SaveKey = false, -- Saves the key in the folder specified above
     }, 
     Transparent = true,-- UI Transparency
