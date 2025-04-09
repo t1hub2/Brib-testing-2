@@ -29,5 +29,5 @@ Window:EditOpenButton({
     ),
     Position = UDim2.new(0.5,0,0.5,0), -- Position
     Enabled = true,   -- true or false
-    Draggable = false, -- true or false
+    Draggable = true, -- true or false
 })
