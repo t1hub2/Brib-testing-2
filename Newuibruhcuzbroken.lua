@@ -19,8 +19,8 @@ local Window = WindUI:CreateWindow({
 })
 
 Window:EditOpenButton({
-    Title = "Open Example UI", -- Title
-    Icon = "monitor", -- Icon
+    Title = "T1 hub: Remake", -- Title
+    Icon = "rbxassetid://72152929042714", -- Icon
     CornerRadius = UDim.new(0,10), -- Radius
     StrokeThickness = 2, -- Stroke Thickness
     Color = ColorSequence.new( -- Gradient
