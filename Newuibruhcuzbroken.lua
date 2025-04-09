@@ -2,7 +2,7 @@ local WindUI = loadstring(game:HttpGet("https://tree-hub.vercel.app/api/UI/WindU
 
 local Window = WindUI:CreateWindow({
     Title = "T1 hub", -- UI Title
-    Icon = "72152929042714", -- Url or rbxassetid or lucide
+    Icon = "rbxassetid://72152929042714", -- Url or rbxassetid or lucide
     Author = ".ftgs", -- Author & Creator
     Folder = "T1hubRemake3", -- Folder name for saving data (And key)
     Size = UDim2.fromOffset(480, 360), -- UI Size
