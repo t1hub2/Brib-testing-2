@@ -44,3 +44,28 @@ local Button = Tab:Button({
         print("Clicked!")
     end,
 })
+local Tab = Window:Tab({
+    Title = "Настройки",
+    Icon = "folder", -- lucide or rbxassetid
+})
+
+local Paragraph = Tab:Paragraph({
+    Title = "Тема",
+    Desc = "Выбери тему",
+    Image = "droplet", -- lucide or URL or rbxassetid://
+    ImageSize = 20,
+    Buttons = {
+        {
+            Title = "Button 1",
+            Callback = function() print("hi") end
+        },
+        {
+            Title = "Button 2",
+            Callback = function() print("hi 2") end
+        },
+        {
+            Title = "Button 3",
+            Callback = function() print("hi 3") end
+        }
+    }
+})
