@@ -24,8 +24,8 @@ Window:EditOpenButton({
     CornerRadius = UDim.new(0,10), -- Radius
     StrokeThickness = 2, -- Stroke Thickness
     Color = ColorSequence.new( -- Gradient
-        Color3.fromHex("FF0F7B"), 
-        Color3.fromHex("F89B29")
+        Color3.fromHex("ffffff"), 
+        Color3.fromHex("000000")
     ),
     Position = UDim2.new(0.5,0,0.5,0), -- Position
     Enabled = true,   -- true or false
