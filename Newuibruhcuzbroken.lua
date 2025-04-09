@@ -140,3 +140,40 @@ local Button = Tab:Button({
 loadstring(game:HttpGet('https://raw.githubusercontent.com/hi822010/Extras-Gliese-Hub-Doors/refs/heads/main/Seek%20Crucifix'))()
     end,
 })
+
+local Tab = Window:Tab({
+    Title = "Вау 0_0",
+    Icon = "folder", -- lucide or rbxassetid
+})
+
+local Button = Tab:Button({
+    Title = "От глаз салли",
+    Desc = "Хз че сюда написать",
+    Callback = function()
+        print("Clicked!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LolSeek/SallyStuff/refs/heads/main/SallyPov"))()
+    end,
+})
+
+local Tab = Window:Tab({
+    Title = "Отель минус",
+    Icon = "folder", -- lucide or rbxassetid
+})
+
+local Button = Tab:Button({
+    Title = "Комната хранилища",
+    Desc = "",
+    Callback = function()
+        print("Clicked!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAcceleration/Comet-Development/refs/heads/main/Doors/Game/CustomRooms/Storage.lua"))()
+    end,
+})
+
+local Button = Tab:Button({
+    Title = "Бесконечное возрождение",
+    Desc = "Button Desc",
+    Callback = function()
+        print("Clicked!")
+game.replicatedstorage.bricks.revive:FireServer()
+    end,
+})
