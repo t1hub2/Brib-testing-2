@@ -31,16 +31,3 @@ Window:EditOpenButton({
     Enabled = true,   -- true or false
     Draggable = true, -- true or false
 })
-
-local Tab = Window:Tab({
-    Title = "Хз",
-    Icon = "folder", -- lucide or rbxassetid
-})
-
-local Button = Tab:Button({
-    Title = "Кликни на меня нах",
-    Desc = "",
-    Callback = function()
-        print("Clicked!")
-    end,
-})
