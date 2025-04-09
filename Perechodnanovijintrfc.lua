@@ -44,6 +44,7 @@ local Button = Tab:Button({
         print("Clicked!")
     end,
 })
+
 local Tab = Window:Tab({
     Title = "Настройки",
     Icon = "folder", -- lucide or rbxassetid
