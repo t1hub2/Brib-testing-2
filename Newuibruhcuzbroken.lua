@@ -111,16 +111,17 @@ local Button = Tab:Button({
     Desc = "01010010",
     Callback = function()
         print("Clicked!")
-            local rush = game:GetObjects("rbxassetid://98093854401365")[1]
-rush.Parent = game.Players.LocalPlayer.Backpack
+        local rush = game:GetObjects("rbxassetid://98093854401365")[1]
+        rush.Parent = game.Players.LocalPlayer.Backpack
 
-rush.Activated:Connect(function()
-local scream = Instance.new("Sound", workspace)
-scream.SoundId = "rbxassetid://5257382967"
-scream.Volume = 2
-scream:Play()
-    end,
-})
+        rush.Activated:Connect(function()
+            local scream = Instance.new("Sound", workspace)
+            scream.SoundId = "rbxassetid://5257382967"
+            scream.Volume = 2
+            scream:Play()
+        end)
+     end,
+})   
 
 local Button = Tab:Button({
     Title = "ОГНЕМЕТ",
