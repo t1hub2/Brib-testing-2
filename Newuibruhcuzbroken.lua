@@ -171,7 +171,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAcceleration/Co
 
 local Button = Tab:Button({
     Title = "Бесконечное возрождение",
-    Desc = "Button Desc",
+    Desc = "",
     Callback = function()
         print("Clicked!")
 game.replicatedstorage.bricks.revive:FireServer()
