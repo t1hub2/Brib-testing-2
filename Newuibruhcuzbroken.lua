@@ -141,6 +141,81 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/hi822010/Extras-Glies
     end,
 })
 
+local Button = Tab:Button({
+    Title = "Роб",
+    Desc = "Чётверка помнишь?",
+    Callback = function()
+        print("Clicked!")
+local rush = game:GetObjects("rbxassetid://139971458944966")[1]
+rush.Parent = game.Players.LocalPlayer.Backpack
+    end,
+})
+
+local Button = Tab:Button({
+    Title = "Золотой шейклайт",
+    Desc = "Золотой",
+    Callback = function()
+        print("Clicked!")
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/aadyian9000/the-thing/main/GoldenGummyFlashlight.lua"),true))()
+    end,
+})
+
+local Button = Tab:Button({
+    Title = "Банка воды",
+    Desc = "",
+    Callback = function()
+        print("Clicked!")
+loadstring(game:HttpGet('https://gist.githubusercontent.com/IdkMyNameLoll/04d7dd5e02688624b958b8c2604b924c/raw/9e86b34249f44ed2dd433176e67daaf3db30cde8/MoonBottle'))()
+    end,
+})
+
+local Button = Tab:Button({
+    Title = "Сикибиди пушка",
+    Desc = "ЧТО?! ПОЧЕМУ Я ЧЕРНЫЙ?! ИХВУЛЬУЛККЛ",
+    Callback = function()
+        print("Clicked!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/seekgun.lua"))()
+    end,
+})
+
+local Button = Tab:Button({
+    Title = "Ракета",
+    Desc = "Бомба ракета 2007",
+    Callback = function()
+        print("Clicked!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/rocketLauncher.lua"))()
+    end,
+})
+
+local Button = Tab:Button({
+    Title = "Банка красной жижи",
+    Desc = "жижа",
+    Callback = function()
+        print("Clicked!")
+loadstring(game:HttpGet('https://gist.githubusercontent.com/IdkMyNameLoll/8b05c837bea9effac2554340465b4be1/raw/3f3be0ee72e7f153db39a16a40fa63dce6cde72d/SpiralBottle'))()
+    end,
+})
+
+local Button = Tab:Button({
+    Title = "бесконечный крест",
+    Desc = "",
+    Callback = function()
+        print("Clicked!")
+local Notification = WindUI:Notify({
+    Title = "Подсказка",
+    Content = "жми q на клаве чтобы юзать",
+    Duration = 5,
+})
+    end,
+
+_G.Uses = 414141414141
+_G.Range = 30
+_G.OnAnything = true
+_G.Fail = false
+_G.Variant = "Electric"
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+})
+
 local Tab = Window:Tab({
     Title = "Вау 0_0",
     Icon = "folder", -- lucide or rbxassetid
