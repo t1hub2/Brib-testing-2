@@ -271,3 +271,18 @@ local Button = Tab:Button({
 game.replicatedstorage.bricks.revive:FireServer()
     end,
 })
+
+local sound = Instance.new("Sound", game.Workspace)
+sound.SoundId = "rbxassetid://8503531171"
+sound:Play()
+
+---====== Load achievement giver ======---
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+---====== Display achievement ======---
+achievementGiver({
+    Title = "Приветик!",
+    Desc = "Это T1 hub!",
+    Reason = "Запустить T1 hub",
+    Image = "rbxassetid://72152929042714"
+})
