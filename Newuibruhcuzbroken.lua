@@ -198,16 +198,9 @@ loadstring(game:HttpGet('https://gist.githubusercontent.com/IdkMyNameLoll/8b05c8
 
 local Button = Tab:Button({
     Title = "бесконечный крест",
-    Desc = "",
+    Desc = "жми q на клаве чтобы юзать",
     Callback = function()
         print("Clicked!")
-local Notification = WindUI:Notify({
-    Title = "Подсказка",
-    Content = "жми q на клаве чтобы юзать",
-    Duration = 5,
-})
-    end,
-
 _G.Uses = 414141414141
 _G.Range = 30
 _G.OnAnything = true
