@@ -57,6 +57,22 @@ local CloseButtonCorner = Instance.new("UICorner")
 CloseButtonCorner.CornerRadius = UDim.new(0.05, 0)
 CloseButtonCorner.Parent = CloseButton
 
+local MinimizeButton = Instance.new("TextButton")
+MinimizeButton.Name = "MinimizeButton"
+MinimizeButton.Parent = TitleBar
+MinimizeButton.Size = UDim2.new(0.1, 0, 1, 0)
+MinimizeButton.Position = UDim2.new(0.8, 0, 0, 0)
+MinimizeButton.BackgroundColor3 = Color3.fromRGB(200, 50, 50)
+MinimizeButton.BorderSizePixel = 0
+MinimizeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MinimizeButton.Text = "-"
+MinimizeButton.Font = Enum.Font.SourceSansBold
+MinimizeButton.TextSize = 20
+
+local MinimizeButtonCorner = Instance.new("UICorner")
+MinimizeButtonCorner.CornerRadius = UDim.new(0.05, 0)
+MinimizeButtonCorner.Parent = MinimizeButton
+
 local ScriptTextbox = Instance.new("TextBox")
 ScriptTextbox.Name = "ScriptTextbox"
 ScriptTextbox.Parent = MainFrame
@@ -122,8 +138,27 @@ local ClearButtonCorner = Instance.new("UICorner")
 ClearButtonCorner.CornerRadius = UDim.new(0.05, 0)
 ClearButtonCorner.Parent = ClearButton
 
+local Icon = Instance.new("ImageButton")
+Icon.Name = "Icon"
+Icon.Parent = Executor
+Icon.Size = UDim2.new(0.05, 0, 0.05, 0)
+Icon.Position = UDim2.new(0.01, 0, 0.01, 0)
+Icon.BackgroundTransparency = 1
+Icon.Image = "rbxassetid://144354274"
+Icon.Visible = false
+
 CloseButton.MouseButton1Click:Connect(function()
 	Executor.Enabled = false
+end)
+
+MinimizeButton.MouseButton1Click:Connect(function()
+	MainFrame.Visible = false
+	Icon.Visible = true
+end)
+
+Icon.MouseButton1Click:Connect(function()
+	MainFrame.Visible = true
+	Icon.Visible = false
 end)
 
 ExecuteButton.MouseButton1Click:Connect(function()
