@@ -17,3 +17,19 @@ local Tabs = {
 
     local LeftGroupbox = Tabs.Main:AddLeftGroupbox("Functions")
 local RightGroupbox = Tabs.Main:AddRightGroupbox("Text Elements")
+
+local Button = LeftGroupbox:AddButton({
+    Text = "Main Button",
+    Tooltip = "Prints Main Button Clicked",
+    Func = function()
+        print("Main Button Clicked!")
+    end
+})
+
+Button:AddButton({
+    Text = "Sub Button",
+    Tooltip = "Prints Sub-Button Clicked",
+    Func = function()
+        print("Sub-button clicked!")
+    end
+})
