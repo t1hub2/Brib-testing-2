@@ -91,48 +91,6 @@ local MyButton = LeftGroupBox:AddButton({
 	Risky = false, -- Makes the text red (the color can be changed using Library.Scheme.Red) (Default value = false)
 })
 
-local MyButton2 = MyButton:AddButton({
-	Text = "Sub button",
-	Func = function()
-		print("You clicked a sub button!")
-	end,
-	DoubleClick = true, -- You will have to click this button twice to trigger the callback
-	Tooltip = "This is the sub button",
-	DisabledTooltip = "I am disabled!",
-})
-function(New)
-		print("[cb] Keybind changed!", New)
-	end,
-})
-
--- OnClick is only fired when you press the keybind and the mode is Toggle
--- Otherwise, you will have to use Keybind:GetState()
-Options.KeyPicker:OnClick(function()
-	print("Keybind clicked!", Options.KeyPicker:GetState())
-end)
-
-Options.KeyPicker:OnChanged(function()
-	print("Keybind changed!", Options.KeyPicker.Value)
-end)
-
-task.spawn(function()
-	while true do
-		wait(1)
-
-		-- example for checking if a keybind is being pressed
-		local state = Options.KeyPicker:GetState()
-		if state then
-			print("KeyPicker is being held down")
-		end
-
-		if Library.Unloaded then
-			break
-		end
-	end
-end)
-
-Options.KeyPicker:SetValue({ "MB2", "Hold" }) -- Sets keybind to MB2, mode to Hold
-
 -- Long text label to demonstrate UI scrolling behaviour.
 local LeftGroupBox2 = Tabs.Main:AddLeftGroupbox("Groupbox #2")
 LeftGroupBox2:AddLabel(
@@ -169,18 +127,6 @@ Tabs.Key:AddKeyBox("Banana", function(Success, ReceivedKey)
 	})
 end)
 
-Tabs.Key:AddLabel({
-	Text = "No Key",
-	DoesWrap = true,
-	Size = 16,
-})
-
-Tabs.Key:AddKeyBox(function(Success, ReceivedKey)
-	print("Expected Key: None | Success:", Success) -- true
-	Library:Notify("Success: " .. tostring(Success), 4)
-end)
-
--- UI Settings
 local MenuGroup = Tabs["UI Settings"]:AddLeftGroupbox("Menu")
 
 MenuGroup:AddToggle("KeybindMenuOpen", {
