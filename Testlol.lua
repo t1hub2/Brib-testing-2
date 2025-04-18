@@ -12,61 +12,26 @@ Library.ShowToggleFrameInKeybinds = true -- Make toggle keybinds work inside the
 local Window = Library:CreateWindow({
 	Title = "T1 hub",
 	Footer = "Тг Канал: t.me/T1hubb",
-	Icon = 95816097006870,
+	Icon = ,
 	NotifySide = "Right",
 	ShowCustomCursor = true,
 })
 
 local Tabs = {
-	-- Creates a new tab titled Main
-	Main = Window:AddTab("Main", "user"),
-	Key = Window:AddKeyTab("Key System"),
-	["UI Settings"] = Window:AddTab("UI Settings", "settings"),
+	Main = Window:AddTab("Главное", "user"),
+	Key = Window:AddKeyTab("Ключевая система"),
+	["UI Settings"] = Window:AddTab("Настройки", "settings"),
 }
 
-
---[[
-Example of how to add a warning box to a tab; the title AND text support rich text formatting.
-
-local WarningTab = Tabs["UI Settings"]:AddTab("Warning Box", "user")
-
-WarningTab:UpdateWarningBox({
-	Visible = true,
-	Title = "Warning",
-	Text = "This is a warning box!",
-})
-
-]]
-
--- Groupbox and Tabbox inherit the same functions
--- except Tabboxes you have to call the functions on a tab (Tabbox:AddTab(name))
-local LeftGroupBox = Tabs.Main:AddLeftGroupbox("Groupbox")
-
--- We can also get our Main tab via the following code:
--- local LeftGroupBox = Window.Tabs.Main:AddLeftGroupbox('Groupbox')
-
--- Tabboxes are a tiny bit different, but here's a basic example:
---[[
-
-local TabBox = Tabs.Main:AddLeftTabbox() -- Add Tabbox on left side
-
-local Tab1 = TabBox:AddTab('Tab 1')
-local Tab2 = TabBox:AddTab('Tab 2')
-
--- You can now call AddToggle, etc on the tabs you added to the Tabbox
-]]
-
--- Groupbox:AddToggle
--- Arguments: Index, Options
 LeftGroupBox:AddToggle("MyToggle", {
 	Text = "This is a toggle",
 	Tooltip = "This is a tooltip", -- Information shown when you hover over the toggle
 	DisabledTooltip = "I am disabled!", -- Information shown when you hover over the toggle while it's disabled
 
-	Default = true, -- Default value (true / false)
-	Disabled = false, -- Will disable the toggle (true / false)
-	Visible = true, -- Will make the toggle invisible (true / false)
-	Risky = false, -- Makes the text red (the color can be changed using Library.Scheme.Red) (Default value = false)
+	Default = true, 
+	Disabled = false, 
+	Visible = true, 
+	Risky = false, 
 
 	Callback = function(Value)
 		print("[cb] MyToggle changed to:", Value)
