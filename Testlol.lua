@@ -1,16 +1,19 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/refs/heads/main/Library.lua"))()
+local repo = "https://raw.githubusercontent.com/deividcomsono/Obsidian/main/"
+local Library = loadstring(game:HttpGet(repo .. "Library.lua"))()
+local ThemeManager = loadstring(game:HttpGet(repo .. "addons/ThemeManager.lua"))()
+local SaveManager = loadstring(game:HttpGet(repo .. "addons/SaveManager.lua"))()
 
 local Window = Library:CreateWindow({
     Title = "T1 hub",
     Footer = "Тг Канал: t.me/T1hubb",
-    ToggleKeybind = Enum.KeyCode.RightControl,
-    Center = true,
-    AutoShow = true
+    Icon = 95816097006870,
+    NotifySide = "Right",
+    ShowCustomCursor = true,
 })
 
-local MainTab = Window:AddTab("Main", "home") -- Second parameter is the icon name (optional)
-Window:AddKeyTab(Ключевая система)
+local Tabs = {
+    Main = Window:AddTab("Main", "house"),
+    ["UI Settings"] = Window:AddTab("UI & Settings", "settings")
 
-local Tabbox = MainTab:AddLeftTabbox("Settings")
-local Tab1 = Tabbox:AddTab("General")
-local Tab2 = Tabbox:AddTab("Advanced")
+    local LeftGroupbox = Tabs.Main:AddLeftGroupbox("Functions")
+local RightGroupbox = Tabs.Main:AddRightGroupbox("Text Elements")
