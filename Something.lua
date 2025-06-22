@@ -27,7 +27,7 @@ local Window = WindUI:CreateWindow({
 
 WindUI:SetTheme("Dark")
 
-Window:SetBackgroundImage("rbxassetid://id-here")
+Window:SetBackgroundImage("rbxassetid://78091003711465")
 
 Window:EditOpenButton({
     Title = "Open Example UI",
